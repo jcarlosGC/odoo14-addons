@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 class SaleOrder(models.Model):
-    _inherit = 'sale_management'
+    _inherit = 'sale.order'
 
     payment_mode = fields.Selection(
         string="Payment Mode",
